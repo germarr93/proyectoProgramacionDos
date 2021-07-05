@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Obligatorio_2.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1 align="center" id="lblTitulo">
+                    Show Time
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:Image ID="Image1" runat="server" Height="42px" 
+                    ImageUrl="~/Resources/logoSiteMaster.png" Width="206px" />
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="False" IncludeStyleBlock="False" Orientation="Horizontal" 
+                    BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Names="Verdana" 
+                    Font-Size="0.8em" ForeColor="#7C6F57" StaticSubMenuIndent="10px">
+                    <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#F7F6F3" />
+                    <DynamicSelectedStyle BackColor="#5D7B9D" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Presentacion/Default.aspx" 
+                            Text="Página principal"/>
+                        <asp:MenuItem NavigateUrl="~/Presentacion/frmCliente.aspx" Text="Clientes" 
+                            Value="Clientes" ToolTip="ABM Cliente"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Presentacion/frmSocio.aspx" Text="Socios" 
+                            Value="Socios" ToolTip="ABM Socios"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Presentacion/frmAuspiciante.aspx" 
+                            Text="Auspiciantes" Value="Auspiciantes"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Presentacion/frmSala.aspx" Text="Salas" 
+                            Value="Salas"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Presentacion/frmSector.aspx" Text="Sectores" 
+                            Value="Sectores"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Presentacion/frmEspectaculo.aspx" 
+                            Text="Espectaculo" Value="Espectaculo"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Presentacion/frmCartelera.aspx" Text="Cartelera" 
+                            Value="Cartelera"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Presentacion/frmVenta.aspx" Text="Venta" 
+                            Value="Venta"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Presentacion/frmConsulta.aspx" Text="Consultas" 
+                            Value="Consultas"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Presentacion/About.aspx" Text="Acerca de" 
+                            ToolTip="Informacion sobre Progrmadores"/>
+                    </Items>
+                    <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#5D7B9D" />
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
