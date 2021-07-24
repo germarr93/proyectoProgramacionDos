@@ -1,4 +1,5 @@
-#TicketCompany-Proyect
+#PROYECT TICKET
+
 Sistema Web que permita realizar la reserva de tickets on-line para una empresa. Lenguaje CSharp y Base de Datos
 
 Se desea hacer un sistema que permita realizar la reserva de tickets on-line para una empresa que gestiona salas de teatros, cines, espectáculos de entrenamiento y estadios multipropósito.
